@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction</title>
+    <style>
+
+        h1 {
+            font-size: 2.3em;
+            color: midnightblue
+        }
+
+        label {
+            font-size: 1.7em;
+            
+        }
+
+        select, button {
+            font-size: 1.2em;
+            color: mediumslateblue
+        }
+
+            button {  
+                cursor: pointer; 
+                color: black
+            }
+
+            
+        
+    </style>
+</head>
+<body>
+
+    <h1>Predict Your Salary by these Features</h1>
+    <form method="POST" action="/predict">
+        <label for="region">Region:</label>
+        <select id="region" name="region">
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Australia and Oceania">Australia and Oceania</option>
+            <option value="Europe">Europe</option>
+            <option value="Middle East">Middle East</option>
+            <option value="Africa">Africa</option>
+        </select><br>
+
+
+        <label for="experience_level">Experience Level:</label>
+        <select id="experience_level" name="experience_level">
+            <option value="EN">EN - Entry Level</option>
+            <option value="MI">MI - Mid Level</option>
+            <option value="SE">SE - Senior Level</option>
+            <option value="EX">EX - Expert Level</option>
+        </select><br>
+
+
+        <label for="job_category">Job Category:</label>
+        <select id="job_category" name="job_category">
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="Data Engineer">Data Engineer</option>
+            <option value="Machine Learning Specialist">Machine Learning Specialist</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Data Science Manager">Data Science Manager</option>
+            <option value="Data Infrastructure">Data Infrastructure</option>
+            <option value="Research and Development">Research and Development</option>
+            <option value="Data Architecture">Data Architecture</option>
+            <option value="Computer Vision and AI">Computer Vision and AI</option>
+            <option value="Analytics and Business Intelligence">Analytics and Business Intelligence</option>
+        </select><br>
+
+
+
+        <label for="company_size">Company Size:</label>
+        <select id="company_size" name="company_size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select><br>
+
+        <button type="submit">Predict Salary</button>
+    </form>
+</body>
+</html>
