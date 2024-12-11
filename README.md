@@ -19,6 +19,7 @@ This project predicts salaries based on various features such as region, experie
 ---
 
 
+
 ## How to Run the Project
 ### **1. Requirements**
 Before running the project, the following Python packages are required:
@@ -45,3 +46,8 @@ Run **`ML_Salaries.ipynb`** with Jupyter Notebook.
 
 - Open the provided link (usually http://127.0.0.1:5000) in your browser.
 -Use the web interface and input features and get salary predictions.
+
+---
+### Note
+The resolution quality of **`DEMO.mp4`** is poor due to 100MB file restriction of GitHub repository. A better resolution video is uploaded in the cloud with following link:
+https://drive.google.com/file/d/1G9xTt17q0ujTKHHbzgXhE08orXce6-iy/view?usp=sharing
